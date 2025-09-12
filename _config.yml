@@ -1,1 +1,29 @@
+title: "Lloyd De Osio"
+author: "Lloyd De Osio"
+description: "My Blogs"
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
 
+# layout
+show_excerpts: true
+show_frame: true
+show_sidebar: false
+minimal: false
+
+# menu navigation - accepts {file, title, url, icon, sidebaricon}
+navigation:
+  - {file: "index.md", title: "Home"}
+  - {file: "blog.md", title: "Blog"}
+
+# external links - shows a footer with social links
+external:
+  - {title: Mail, icon: envelope, url: "mailto:lpdeosio@gmail.com"}
+
+# comments
+# disqus_shortname: "" # see https://disqus.com/
+# isso_domain: "" # see https://posativ.org/isso/
+
+plugins:
+  - jekyll-feed
