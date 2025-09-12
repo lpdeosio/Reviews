@@ -1,16 +1,26 @@
 ---
-layout: home
+layout: default
 title: Blog
 ---
 
-## My Blog Posts
+<nav>
+  <a href="/">← Home</a>
+</nav>
 
-{% for post in site.posts %}
-  <article>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p>{{ post.date | date: site.date_format }}</p>
-    {% if post.excerpt %}
-      {{ post.excerpt }}
-    {% endif %}
-  </article>
-{% endfor %}
+<h1>My Blog Posts</h1>
+
+{% if site.posts.size > 0 %}
+  {% for post in site.posts %}
+    <article>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>Posted on {{ post.date | date: site.date_format }}</p>
+      {% if post.excerpt %}
+        <div class="excerpt">{{ post.excerpt | strip_html }}</div>
+      {% endif %}
+      <a href="{{ post.url }}">Read full post →</a>
+    </article>
+    <hr>
+  {% endfor %}
+{% else %}
+  <p>No posts yet—check back soon!</p>
+{% endif %}
