@@ -6,14 +6,12 @@ lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
-# Minima-specific layout settings
-minima:
-  show_excerpts: true
-  date_format: "%B %d, %Y"
+theme: minima  # Explicitly set Minima for GitHub Pages
 
-# Basic navigation (we'll add via includes later)
-# external links
+# Minima settings
 minima:
+  skin: classic  # Or 'dark'/'border' for styles
+  show_excerpts: true
   social_links:
     - { platform: email, user: lpdeosio@gmail.com }
 
