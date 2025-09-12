@@ -15,5 +15,9 @@ minima:
   social_links:
     - { platform: email, user: lpdeosio@gmail.com }
 
+header_pages:
+  - index.md
+  - blog.md
+  
 plugins:
   - jekyll-feed
