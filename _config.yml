@@ -6,24 +6,16 @@ lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
-# layout
-show_excerpts: true
-show_frame: true
-show_sidebar: false
-minimal: false
+# Minima-specific layout settings
+minima:
+  show_excerpts: true
+  date_format: "%B %d, %Y"
 
-# menu navigation - accepts {file, title, url, icon, sidebaricon}
-navigation:
-  - {file: "index.md", title: "Home"}
-  - {file: "blog.md", title: "Blog"}
-
-# external links - shows a footer with social links
-external:
-  - {title: Mail, icon: envelope, url: "mailto:lpdeosio@gmail.com"}
-
-# comments
-# disqus_shortname: "" # see https://disqus.com/
-# isso_domain: "" # see https://posativ.org/isso/
+# Basic navigation (we'll add via includes later)
+# external links
+minima:
+  social_links:
+    - { platform: email, user: lpdeosio@gmail.com }
 
 plugins:
   - jekyll-feed
